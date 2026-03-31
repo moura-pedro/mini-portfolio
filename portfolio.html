@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Moura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <span class="logo">pm.dev</span>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-eyebrow">Brazilian Software Engineer — Sorocaba, BR</div>
+  <h1>Pedro<br><em>Moura</em></h1>
+  <p class="hero-desc">I am a Brazilian software engineer with hands-on experience across robotics, backend systems, and web products. Today, I am focused on generative AI and building useful tools that solve real problems.</p>
+  <div class="hero-links">
+    <a class="btn btn-primary" href="#projects">View Work</a>
+    <a class="btn btn-ghost" href="mailto:its.pedromoura@gmail.com">Get in touch</a>
+    <a class="btn btn-ghost" href="https://github.com/moura-pedro" target="_blank">GitHub ↗</a>
+  </div>
+  <div class="hero-scroll">scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 — About</div>
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <h2>Engineer first, curious builder always.</h2>
+      <p>I like working across the stack and adapting to whatever a product needs most, whether that is backend architecture, front-end UX, or AI integration.</p>
+      <p>My background mixes industry and research: internships at Amazon and AWS, plus LLM entropy research at the NETS Lab at Florida Tech.</p>
+      <p>I am especially interested in practical generative AI, computer vision, and systems that make complex workflows feel simple for real people.</p>
+      <div class="tag-list">
+        <span class="tag">Python</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Java</span>
+        <span class="tag">LLMs</span>
+        <span class="tag">AWS</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">RAG</span>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <h3 class="about-right-title">What I care about</h3>
+      <div class="stat-row">
+        <span class="stat-label">Build tools people actually keep using</span>
+        <span class="stat-num">01</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Keep systems simple and maintainable</span>
+        <span class="stat-num">02</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Learn by shipping, not just planning</span>
+        <span class="stat-num">03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">02 — Experience</div>
+  <div class="cards-grid reveal">
+
+    <div class="card" onclick="openModal('lucida')">
+      <div class="card-meta">Jul 2025 — Present · Remote</div>
+      <div class="card-title">Co-founder @ Lucida</div>
+      <div class="card-desc">Building Lucida, an AI-powered platform for educators with focus on product quality, AI workflows, and fast iteration.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Next.js</span>
+          <span class="card-tag">OpenAI</span>
+          <span class="card-tag">RAG</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('nets')">
+      <div class="card-meta">Jan 2025 — May 2025 · Melbourne, FL</div>
+      <div class="card-title">UG Researcher @ NETS Lab</div>
+      <div class="card-desc">Investigated entropy patterns and behavior in large language models under Dr. Ryan White.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">BERT</span>
+          <span class="card-tag">NLP</span>
+          <span class="card-tag">Research</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('omeida')">
+      <div class="card-meta">May 2024 — Aug 2024 · Yangshuo, China</div>
+      <div class="card-title">English Tutor @ Omeida Academy</div>
+      <div class="card-desc">Taught small conversation-focused classes for local students, helping them gain confidence speaking English in daily situations.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Teaching</span>
+          <span class="card-tag">Communication</span>
+          <span class="card-tag">Cultural Immersion</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('aws')">
+      <div class="card-meta">May 2023 — Aug 2023 · Seattle, WA</div>
+      <div class="card-title">SDE Intern @ AWS</div>
+      <div class="card-desc">Optimized optical rack planning for data centers using SageMaker and built batch job pipelines on AWS Batch.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Java</span>
+          <span class="card-tag">SageMaker</span>
+          <span class="card-tag">Lambda</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('amazon')">
+      <div class="card-meta">May 2022 — Aug 2022 · Washington, DC</div>
+      <div class="card-title">SDE Intern @ Amazon</div>
+      <div class="card-desc">Improved the native landing page and built a User Preferences interface using React and TypeScript.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">React</span>
+          <span class="card-tag">TypeScript</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">03 — Education</div>
+  <div class="cards-grid reveal">
+    <div class="card" onclick="openModal('floridatech')">
+      <div class="card-meta">2021 — 2025 · Melbourne, FL</div>
+      <div class="card-title">B.S. Computer Science</div>
+      <div class="card-desc">Florida Institute of Technology. Graduated Cum Laude and conducted undergraduate research in machine learning and language models.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Cum Laude</span>
+          <span class="card-tag">Research</span>
+          <span class="card-tag">ML / NLP</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('stanfordsummer')">
+      <div class="card-meta">2020 · Stanford University</div>
+      <div class="card-title">Coding Summer Program</div>
+      <div class="card-desc">Intensive summer program focused on programming fundamentals, project building, and collaborative problem solving.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Programming</span>
+          <span class="card-tag">Team Projects</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('murss')">
+      <div class="card-meta">2019 · MIT & USP</div>
+      <div class="card-title">MURSS Robotics Summer Program</div>
+      <div class="card-desc">MIT/USP robotics summer program with hands-on technical activities and exposure to robotics applications and research.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Robotics</span>
+          <span class="card-tag">MIT / USP</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">04 — Projects</div>
+  <div class="cards-grid reveal">
+
+    <div class="card" onclick="openModal('agent')">
+      <div class="card-meta">Personal Project</div>
+      <div class="card-title">AI Agent for Health Clinics</div>
+      <div class="card-desc">WhatsApp-native scheduling agent that handles booking, rescheduling, and cancellations via text, voice notes, and calls.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">GPT-4</span>
+          <span class="card-tag">Whisper</span>
+          <span class="card-tag">FastAPI</span>
+          <span class="card-tag">WhatsApp</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('vvgames')">
+      <div class="card-meta">Personal Project · Family App</div>
+      <div class="card-title">Vilela Vianna Games</div>
+      <div class="card-desc">Built for a friend's board-game-loving family to replace notebook scorekeeping with session tracking, rankings, and long-term stats they've used for over 2 years.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">React</span>
+          <span class="card-tag">Firebase</span>
+          <span class="card-tag">Analytics</span>
+          <span class="card-tag">Web App</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('spraywall')">
+      <div class="card-meta">Personal Project · Sorocaba, Brazil</div>
+      <div class="card-title">Spraywall</div>
+      <div class="card-desc">Built for my local climbing gym after seeing route ideas managed on paper. Climbers now create, save, and search boulders digitally by hold type and difficulty.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">React</span>
+          <span class="card-tag">Supabase</span>
+          <span class="card-tag">Climbing</span>
+          <span class="card-tag">Product Design</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('fitplanner')">
+      <div class="card-meta">Academic Product Project</div>
+      <div class="card-title">FIT Class Schedule Planner</div>
+      <div class="card-desc">Web tool that combines degree tracking, course planning, and conflict checks in one place, cutting registration time from around 30 minutes to around 2.5 minutes on average.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">MERN</span>
+          <span class="card-tag">Scheduling</span>
+          <span class="card-tag">UX</span>
+          <span class="card-tag">Education</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('climbing')">
+      <div class="card-meta">Personal Project</div>
+      <div class="card-title">Climbing Performance Prediction</div>
+      <div class="card-desc">Regression model to predict max climbing grade from body metrics, with decision tree analysis for feature importance.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">ML</span>
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Decision Trees</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('surfforecast')">
+      <div class="card-meta">Personal Project · Data Science</div>
+      <div class="card-title">Melbourne Beach Surf Forecast</div>
+      <div class="card-desc">Unsupervised learning project to cluster surf conditions and spot sessions that feel closer to the waves I grew up surfing in Brazil.</div>
+      <div class="card-footer">
+        <div class="card-tags">
+          <span class="card-tag">Python</span>
+          <span class="card-tag">Unsupervised ML</span>
+          <span class="card-tag">K-means</span>
+          <span class="card-tag">PCA</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">05 — Skills</div>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <div class="skill-list">
+        <span class="skill-item">Python</span>
+        <span class="skill-item">TypeScript / JavaScript</span>
+        <span class="skill-item">Java</span>
+        <span class="skill-item">SQL</span>
+        <span class="skill-item">React</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">AI & ML</div>
+      <div class="skill-list">
+        <span class="skill-item">OpenAI API</span>
+        <span class="skill-item">RAG Pipelines</span>
+        <span class="skill-item">Vector Databases</span>
+        <span class="skill-item">AWS SageMaker</span>
+        <span class="skill-item">BERT / NLP</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Infrastructure</div>
+      <div class="skill-list">
+        <span class="skill-item">AWS (Lambda, Batch)</span>
+        <span class="skill-item">Docker</span>
+        <span class="skill-item">FastAPI</span>
+        <span class="skill-item">PostgreSQL</span>
+        <span class="skill-item">Redis</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Interests</div>
+      <div class="skill-list">
+        <span class="skill-item">Generative AI</span>
+        <span class="skill-item">Deep Learning</span>
+        <span class="skill-item">Robotics</span>
+        <span class="skill-item">System Design</span>
+        <span class="skill-item">Computer Vision</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <div class="skill-list">
+        <span class="skill-item">Portuguese (Native)</span>
+        <span class="skill-item">English (Fluent)</span>
+        <span class="skill-item">Mandarin (Basic)</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Certifications</div>
+      <div class="skill-list">
+        <span class="skill-item">Gen AI Intensive — Google</span>
+        <span class="skill-item">Neural Networks — DeepLearning.AI</span>
+        <span class="skill-item">CS50 — Harvard / edX</span>
+        <span class="skill-item">Generative AI — AWS / Udemy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <div class="section-label">06 — Hobbies</div>
+  <div class="reveal">
+    <div class="tag-list">
+      <span class="tag">Rock climbing</span>
+      <span class="tag">Hiking</span>
+      <span class="tag">Board Games</span>
+      <span class="tag">Barbecue</span>
+      <span class="tag">Cafezinho + bolo</span>
+      <span class="tag">Rodinha de música</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">07 — Contact</div>
+  <div class="contact-inner reveal">
+    <div class="contact-left">
+      <h2>Let's build<br><em>something</em><br>together.</h2>
+      <p>Open to new opportunities, collaborations, and interesting problems. Reach out anytime.</p>
+    </div>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:its.pedromoura@gmail.com">its.pedromoura@gmail.com</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/pedroomour" target="_blank">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/moura-pedro" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Pedro Moura</p>
+  <p>Sorocaba, SP · Brazil</p>
+</footer>
+
+<!-- MODAL OVERLAY -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-eyebrow" id="modalEyebrow"></div>
+        <div class="modal-title" id="modalTitle"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
