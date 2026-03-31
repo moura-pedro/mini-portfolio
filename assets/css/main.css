@@ -311,14 +311,12 @@ section {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
+  gap: 12px;
 }
 .skill-group {
   background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
   padding: 24px;
 }
 .skill-group-name {
